@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Resume Screener</title>
+        <link rel="stylesheet" href="main.css">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    </head>
+
+    <body>
+        <div class="top-text">
+            <div class="header-left">
+                <div class="logo">
+                    <i class="ti ti-file-search"></i>
+                </div>
+                <h1>Resume Screener</h1>
+            </div>
+            <span>✦ AI-powered</span>
+        </div>
+        <div class="main-section">
+            <div class="form-section">
+                <form>
+                    <div class="upload-card">
+                        <p class="upload-header">UPLOAD RESUME</p>
+                        <div class="upload-box" onclick="document.getElementById('resume-file').click()">
+                            <i class="ti ti-upload"></i>
+                            <p class="upload-text">Drop your file here</p>
+                            <span>or click to browse</span>
+                            <input type="file" id="resume-file">
+                        </div>
+                    </div>
+                    <div class="jd-card">
+                        <p>JOB DESCRIPTION</p>
+                        <textarea id="job-description" placeholder="Paste the job description here..."></textarea>
+                        <button type="button" id="analyse-btn">✦ Analyse Resume</button>
+                    </div>
+                </form>
+            </div>
+            <div class="result-section" id="result-section">
+                <p class="label1">RESULTS</p>
+
+                <div class="score-section">
+                    <div class="score-circle">
+                        <span class="score-num">0</span>
+                        <span class="score-den">/100</span>
+                    </div>
+                    <div class="score-info">
+                        <h2>Name...</h2>
+                        <p>An analysis of the candidate's resume...</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="strength-section">
+                    <p class="label">STRENGTHS</p>
+                    <div class="tags" id="s-tags">
+
+                    </div>
+                </div>
+                <div class="weakness-section">
+                    <p class="label">SKILL GAPS</p>
+                    <div class="tags" id="w-tags">
+
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <p id="summary-text">A detailed summary of the candidate's skills...</p>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

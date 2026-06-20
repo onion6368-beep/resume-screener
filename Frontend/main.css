@@ -1,0 +1,328 @@
+body {
+    background-color: #f5f5f5;
+    margin:0;
+}
+body:before{
+    content: "";
+    display: block;
+    height: 10px;
+    background: linear-gradient(90deg, #5b50f0, #a09cf7);
+}
+* {
+    font-family: 'Segoe UI', sans-serif;
+}
+.main-section{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:32px;
+    box-sizing:border-box;
+}
+.top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 16px 40px;
+    border-bottom: 1px solid #eee;
+}
+.top-text h1{
+    font-weight: 500;
+    font-size: 20px;
+}
+.logo {
+    width: 38px;
+    height: 38px;
+    background: #5b50f0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+.top-text span{
+    color:#5b50f0;
+    background-color:  #eeeeff;
+    border-radius: 12px;
+    padding:4px 12px;
+    border:1px solid  #d0cffe;
+    font-weight:500;
+}
+.form-section{
+    display: flex;
+    justify-content: center;
+    padding:32px;
+}
+form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    width:100%;
+}
+.upload-card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 12px;
+    padding: 24px;
+    height:240px;
+}
+
+.upload-header {
+    font-size: 15px;
+    font-weight: 600;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    pointer-events: none;
+}
+.upload-card span{
+    color: #888;
+}
+.upload-text{
+    font-size: 15px;
+    font-weight: 600;
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+.upload-box{
+    border:2px dashed #ccc;
+    border-radius: 10px;
+    padding:40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafe;
+    min-height:100px;
+}
+.upload-box:hover {
+    background-color: #eeeeff;
+    border-color: #5b50f0;
+}
+#resume-file{
+    display: none;
+}
+.jd-card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    border-radius: 12px;
+    padding: 24px;
+    height:240px;
+}
+.jd-card p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+textarea {
+    width: 100%;
+    height: 130px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    font-size: 14px;
+    font-family: 'Segoe UI', sans-serif;
+    outline: none;
+    background: #fafafe;
+    box-sizing: border-box;
+}
+textarea:focus {
+    border-color: #5b50f0;
+}
+button {
+    background-color: #5b50f0;
+    width:100%;
+    color:white;
+    padding:12px;
+    border-radius: 8px;
+    font-size:17px;
+    cursor:pointer;
+    border:none;
+    font-weight: 500;
+}
+.result-section{
+    background: #fafafe;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin: 0 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px;
+    padding-left: 12px;
+}
+.label1 {
+    font-size: 11px;
+    font-weight: 600;
+    color: #888;
+    letter-spacing: 0.08em;
+    padding: 16px 24px 12px 24px;
+}
+.score-circle {
+    border: 4px solid #5b50f0;
+    border-radius: 50%;
+    width: 73px;
+    height: 73px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeff;
+}
+.score-num{
+    color:#5b50f0;
+    font-weight: 500;
+    font-size:30px;
+}
+.score-den{
+    font-size: 11px;
+    color: #aaa;
+}
+.score-section {
+    display: flex;
+    align-items: center;
+    gap:30px;
+    padding:0px 24px;
+}
+.score-info h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin:0;
+}
+.score-info p {
+    font-size: 15px;
+    color: #888;
+    margin-top: 4px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.divider {
+    height: 0.5px;
+    background: #bbb;
+    margin: 16px 24px;
+    opacity: 50%;
+}
+.label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #888;
+    letter-spacing: 0.08em;
+    padding: 0;
+    margin-bottom: 8px;
+}
+#result-section {
+    display: none;
+}
+.strength-section, .weakness-section {
+    padding: 0 24px;
+    margin:10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.green-bubble {
+    background: #dcf5e7;
+    color: #1a7a4a;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+.red-bubble {
+    background: #ffe0e0;
+    color: #c0392b;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+.summary-section {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+    margin: 24px 24px 24px 24px;
+    font-weight: 400;
+}
+@media (max-width: 768px) {
+    .top-text {
+        padding: 12px 16px;
+    }
+
+    .main-section {
+        padding: 16px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .upload-card, .jd-card {
+        height: auto;
+    }
+
+    .result-section {
+        margin: 0 0 16px 0;
+    }
+
+    .score-section {
+        padding: 12px 16px;
+        gap: 16px;
+    }
+
+    .score-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .score-num {
+        font-size: 22px;
+    }
+
+    .label1, .label {
+        padding: 12px 16px 0px 16px;
+    }
+
+    .strength-section, .weakness-section {
+        padding: 0 16px;
+    }
+
+    .divider {
+        margin: 12px 16px;
+    }
+
+    .summary-section {
+        margin: 0 16px 16px 16px;
+    }
+
+    .score-info h2 {
+        font-size: 16px;
+    }
+
+    .score-info p {
+        font-size: 13px;
+    }
+}
