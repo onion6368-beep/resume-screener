@@ -3,9 +3,10 @@ import pdfplumber
 from groq import Groq
 import json
 from fastapi.middleware.cors import CORSMiddleware
+import os
 
 
-client = Groq(api_key = "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")
+client = Groq(api_key = os.environ.get("GROQ_API_KEY"))
 app = FastAPI()
 
 app.add_middleware(
