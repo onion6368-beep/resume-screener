@@ -24,7 +24,7 @@ analyseBtn.addEventListener("click", function() {
 
     formdata.append("job_description",description)
 
-    fetch("http://127.0.0.1:8000/upload",{
+    fetch("https://resume-screener-gdam.onrender.com/upload",{
         method: "POST",
         body:formdata
     })
