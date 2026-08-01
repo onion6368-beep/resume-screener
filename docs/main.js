@@ -30,6 +30,7 @@ analyseBtn.addEventListener("click", function() {
     })
     .then(response => response.json())
     .then(data => {
+        console.log(data);
         document.querySelector('.score-num').textContent = data.match_score;
         document.querySelector('.score-info h2').textContent = data.hiring_recommendation;
         document.querySelector('.score-info p').textContent = data.match_summary;
